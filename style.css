@@ -1,0 +1,36 @@
+.header-hamburger {
+    display: block;
+    width: 26px; }
+  .header-hamburger__line {
+    display: inline-block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    position: relative; }
+  .header-hamburger__line:before, .header-hamburger__line:after {
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .header-hamburger__line:before {
+    -webkit-transform: translateY(-7px);
+        -ms-transform: translateY(-7px);
+            transform: translateY(-7px); }
+  .header-hamburger__line:after {
+    -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+            transform: translateY(4px); }
+  .header-hamburger__line.active {
+    background-color: transparent; }
+  .header-hamburger__line.active:before {
+    -webkit-transform: translateY(0) rotate(-45deg);
+        -ms-transform: translateY(0) rotate(-45deg);
+            transform: translateY(0) rotate(-45deg); }
+  .header-hamburger__line.active:after {
+    -webkit-transform: translateY(0) rotate(45deg);
+        -ms-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg); } }

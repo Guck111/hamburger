@@ -1,0 +1,36 @@
+&-hamburger{
+	display: block;
+	width: 26px;
+	&__line{
+		display: inline-block;
+		height: 3px;
+		width: 100%;
+		background-color: $black;
+		position: relative;
+		&:before, &:after{
+			content:'';
+			display: inline-block;
+			height: 3px;
+			width: 100%;
+			background-color: $black;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:before{
+			transform: translateY(-7px);
+		}
+		&:after{
+			transform: translateY(4px);
+		}
+		&.active{
+			background-color: transparent;
+			&:before{
+				transform: translateY(0) rotate(-45deg);
+			}
+			&:after{
+				transform: translateY(0) rotate(45deg);
+			}
+		}
+	}
+}
