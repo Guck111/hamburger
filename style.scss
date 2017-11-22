@@ -1,16 +1,21 @@
 &-hamburger{
 	display: block;
 	width: 26px;
+	height: 20px;
+	position: relative;
 	&__line{
 		display: inline-block;
-		height: 3px;
+		height: 2px;
 		width: 100%;
 		background-color: $black;
-		position: relative;
+		position: absolute;
+		top:50%;
+		left: 0;
+		transform: translateY(-50%);
 		&:before, &:after{
 			content:'';
 			display: inline-block;
-			height: 3px;
+			height: 2px;
 			width: 100%;
 			background-color: $black;
 			position: absolute;
@@ -21,7 +26,7 @@
 			transform: translateY(-7px);
 		}
 		&:after{
-			transform: translateY(4px);
+			transform: translateY(7px);
 		}
 		&.active{
 			background-color: transparent;
